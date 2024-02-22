@@ -6,3 +6,4 @@ Configuring Auto Generation of Swagger Documentation
 		<version>2.3.0</version>
 	</dependency>
 
+http://localhost:8085/swagger-ui/index.html#/
