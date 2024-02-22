@@ -1,4 +1,4 @@
-Configuring Auto Generation of Swagger Documentation
+#Configuring Auto Generation of Swagger Documentation
 
 	<dependency>
 		<groupId>org.springdoc</groupId>
@@ -9,7 +9,7 @@ Configuring Auto Generation of Swagger Documentation
 http://localhost:8085/swagger-ui/index.html#/
 
 
-Versioning Rest Api - Options
+#Versioning Rest Api - Options
 
 Uri Versioning - Twitter
 
@@ -34,7 +34,7 @@ Media type versioning (content negotiation or accept header) - Github
 
 
 
-HATEOAS 
+#HATEOAS 
 hypermedia as the Engine of Application state
 
 		<dependency>
@@ -65,4 +65,23 @@ over here you can see that we have the name, birthdate as the response in additi
    	Difficult to maintain
 2. Use Standard Implementation
    	HAL (JSON Hypertext Application Language): Simple format that gives a consistent easy way to hyperlink between resources in your API
+
+
+#Customizing REST API Responses - Filtering and more.. 
+
+ Serialization - process of converting object into stream (example: JSON)
+ for example we are returning an list of users back, converting this to a JSON or to an XML is what is called serialization 
+ The most popular JSON Serialization in java is Jackson 
+ Until now whatever the structure of the User is exctaly at the response, so we have id,name and the birthdate and that is eactly at the response, in certain situation you might not want to return the exact structure as what you have in here you might want to customize the rest api response that is being return by jackson framework, lets look at the few options to customize in the next step.
+
+1. Customize filed names in response
+    	@JSONProperty("user_name")
+2.  Return only selected fields
+   	Filtering - for example you might have a password defined in your bean and you dont want to send passwords out in the response.
+    There are two types of filtering -
+    	1. static filtering: Same filtering for a bean across different REST API
+    		@JsonIgnoreProperties, @JsonIgnore
+    	2. Dynamic Filtering: Customize filtering for a bean for specific REST API
+    		@JsonFilter with FilterProvider 
+
 
