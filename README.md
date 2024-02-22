@@ -1,4 +1,4 @@
-#Configuring Auto Generation of Swagger Documentation
+# Configuring Auto Generation of Swagger Documentation
 
 	<dependency>
 		<groupId>org.springdoc</groupId>
@@ -9,7 +9,7 @@
 http://localhost:8085/swagger-ui/index.html#/
 
 
-#Versioning Rest Api - Options
+# Versioning Rest Api - Options
 
 Uri Versioning - Twitter
 
@@ -34,7 +34,7 @@ Media type versioning (content negotiation or accept header) - Github
 
 
 
-#HATEOAS 
+# HATEOAS 
 hypermedia as the Engine of Application state
 
 		<dependency>
@@ -67,7 +67,7 @@ over here you can see that we have the name, birthdate as the response in additi
    	HAL (JSON Hypertext Application Language): Simple format that gives a consistent easy way to hyperlink between resources in your API
 
 
-#Customizing REST API Responses - Filtering and more.. 
+# Customizing REST API Responses - Filtering and more.. 
 
  Serialization - process of converting object into stream (example: JSON)
  for example we are returning an list of users back, converting this to a JSON or to an XML is what is called serialization 
