@@ -77,6 +77,14 @@ public class User {
 	public void setId(Integer id) {
 		this.id = id;
 	}
+
+	public List<Post> getPosts() {
+		return posts;
+	}
+
+	public void setPosts(List<Post> posts) {
+		this.posts = posts;
+	}
 	
 	
 	
